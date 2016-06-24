@@ -2,7 +2,7 @@ machine:
   ruby:
     version: 2.3.0
   post:
-    - ruby apiserver.rb: {background: true}
+    - bundle exec ruby apiserver.rb: {background: true}
 
 checkout:
   post:
