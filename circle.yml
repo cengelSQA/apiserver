@@ -1,6 +1,9 @@
 machine:
   ruby:
     version: 2.3.0
+  post:
+    - ruby apiserver.rb:
+      background: true
 
 checkout:
   post:
@@ -10,8 +13,6 @@ checkout:
 dependencies:
   pre:
     - bundle install
-  post:
-    - ruby apiserver.rb
 
 test:
   pre:
