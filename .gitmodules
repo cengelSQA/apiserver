@@ -1,0 +1,3 @@
+[submodule "apitest"]
+	path = apitest
+	url = https://github.com/cengelSQA/apitest.git
