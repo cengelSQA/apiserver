@@ -8,6 +8,8 @@ checkout:
     - git submodule update --init --remote
 
 dependencies:
+  pre:
+    - bundle install
   post:
     - ruby apiserver.rb
 
