@@ -2,8 +2,7 @@ machine:
   ruby:
     version: 2.3.0
   post:
-    - ruby apiserver.rb:
-      background: true
+    - ruby apiserver.rb: {background: true}
 
 checkout:
   post:
