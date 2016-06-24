@@ -1,0 +1,3 @@
+checkout:
+  post:
+    - git submodule add https://github.com/cengelSQA/apitest.git
