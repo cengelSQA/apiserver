@@ -1,6 +1,6 @@
 checkout:
   post:
-    - git submodule add https://github.com/cengelSQA/apitest.git
+    - git submodule update https://github.com/cengelSQA/apitest.git
 test:
   override:
     - ruby ./apitest/test_api.rb
