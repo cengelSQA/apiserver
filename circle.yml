@@ -2,6 +2,9 @@ checkout:
   post:
     - git submodule sync
     - git submodule update --init
+
 test:
+  pre:
+    - bundle install --path ./apitest/Gemfile
   override:
     - ruby ./apitest/test_api.rb
