@@ -5,6 +5,6 @@ checkout:
 
 test:
   pre:
-    - bundle install --path ./apitest/Gemfile
+    - bundle install --gemfile ./apitest/Gemfile
   override:
     - ruby ./apitest/test_api.rb
