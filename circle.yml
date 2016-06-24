@@ -10,7 +10,6 @@ checkout:
 dependencies:
   post:
     - ruby apiserver.rb
-      background: true
 
 test:
   pre:
