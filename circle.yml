@@ -1,8 +1,6 @@
 machine:
   ruby:
     version: 2.3.0
-  post:
-    - ruby apiserver.rb: {background: true}
 
 checkout:
   post:
@@ -15,6 +13,7 @@ dependencies:
 
 test:
   pre:
+    - ruby ./apiserver.rb: {background: true}
     - bundle install --gemfile ./apitest/Gemfile
   override:
     - ruby ./apitest/test_api.rb
