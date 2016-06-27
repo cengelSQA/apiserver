@@ -2,7 +2,7 @@ machine:
   ruby:
     version: 2.3.0
   post:
-    - bundle exec ruby apiserver.rb > $CIRCLE_ARTIFACTS/apiserver.log: {background: true}
+    - ruby apiserver.rb: {background: true}
 
 checkout:
   post:
