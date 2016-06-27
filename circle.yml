@@ -3,6 +3,7 @@ machine:
     version: 2.3.0
   post:
     - bundle exec ruby apiserver.rb: {background: true}
+    - sleep 5
 
 checkout:
   post:
