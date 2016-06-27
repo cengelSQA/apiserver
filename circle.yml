@@ -2,8 +2,7 @@ machine:
   ruby:
     version: 2.3.0
   post:
-    - bundle exec ruby apiserver.rb: {background: true}
-    - sleep 5
+    - bundle exec ruby apiserver.rb > apiserver.log: {background: true}
 
 checkout:
   post:
